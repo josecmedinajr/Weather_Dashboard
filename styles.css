@@ -1,0 +1,35 @@
+body {
+    background-image: url("cloudy_skies.jpg");
+}
+
+.weather-container {
+    background-color: rgb(50, 50, 121);
+    border-radius: 10px;
+}
+
+.weather-condition {
+    font-size: 35px;
+    margin: 0;
+}
+
+.temperature {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: yellow;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.container {   
+    text-align: center;
+}
