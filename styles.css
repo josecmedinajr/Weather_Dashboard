@@ -9,7 +9,7 @@ body {
 
 .weather-condition {
     font-size: 35px;
-    margin: 0;
+    margin: 10;
 }
 
 .temperature {
@@ -24,7 +24,18 @@ h1 {
     color: yellow;
 }
 
+a {
+    color: white;
+}
+
+.farenheit {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
 p {
+    padding-top: 15px;
     font-size: 30px;
     text-align: center;
     color: white;
