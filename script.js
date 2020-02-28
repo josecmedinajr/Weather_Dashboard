@@ -1,3 +1,4 @@
+$(document).ready(function() {
 // updates date and time dynamically using the moment.js function
 var update = function() {
     document.getElementById("datetime")
@@ -7,7 +8,6 @@ setInterval(update, 1000);
 
 // JQuery getJSON function to get data from openweathermap.org with my API: 3cdcca706cc22e516be1f657eb0929a4
 
-$(document).ready(function() {
     $("#search").click(function() {
       console.log($("#city").val());
 
@@ -17,11 +17,14 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=
 console.log(data);
 
     var icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-    var temperature = Math.floor(data.main.temp);
+    var temperature = Math.floor(data.main.temp) + " Farenheit";
     var weatherCondition = data.weather[0].main
 
+    $(".cityName").text(city);
     $(".weather-icon").attr("src", icon);
+    $(".temperature").empty();
     $(".temperature").append(temperature);
+    $(".weather-condition").empty();
     $(".weather-condition").append(weatherCondition);
     
     });

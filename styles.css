@@ -6,6 +6,10 @@ body {
     margin-top: 30px;
 }
 
+#search {
+    background-color: rgb(75, 153, 201);
+}
+
 .weather-container {
     background-color: rgb(50, 50, 121);
     border-radius: 10px;
