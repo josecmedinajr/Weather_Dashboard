@@ -17,7 +17,7 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=
 console.log(data);
 
     var icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-    var temperature = Math.floor(data.main.temp) + " Farenheit";
+    var temperature = Math.floor(data.main.temp) + " °F";
     var weatherCondition = data.weather[0].main
 
     $(".cityName").text(city);
