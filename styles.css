@@ -2,6 +2,10 @@ body {
     background-image: url("cloudy_skies.jpg");
 }
 
+#city {
+    margin-top: 30px;
+}
+
 .weather-container {
     background-color: rgb(50, 50, 121);
     border-radius: 10px;
